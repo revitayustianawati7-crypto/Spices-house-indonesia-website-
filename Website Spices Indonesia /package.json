@@ -1,0 +1,20 @@
+{
+  "name": "website-spices-indonesia",
+  "version": "1.0.0",
+  "description": "Full-stack B2B export website for Spices House Indonesia",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "spice exporter",
+    "indonesia",
+    "b2b",
+    "seo"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

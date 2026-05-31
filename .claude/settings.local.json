@@ -1,0 +1,22 @@
+{
+  "language": "indonesian",
+  "permissions": {
+    "allow": [
+      "Read(//Users/revitayustianawati/Desktop/Dreamlab - Work /**)",
+      "Read(//Users/revitayustianawati/.claude/**)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "input=$(cat); f=$(echo \"$input\" | jq -r '.tool_input.file_path // \"\"'); echo \"$f\" | grep -q 'Analytics' || echo '{\"systemMessage\": \"Reminder: task outputs should be saved to the Analytics/ folder.\"}'"
+          }
+        ]
+      }
+    ]
+  }
+}
