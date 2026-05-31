@@ -100,7 +100,7 @@ app.post('/api/inquiries', async (request, response) => {
   } catch (error) {
     response.status(500).json({
       ok: false,
-      message: 'Server error while saving your request. Please email export@spiceshouse.id directly.'
+      message: 'Server error while saving your request. Please email revita@spiceshouseindonesia.com directly.'
     });
   }
 });

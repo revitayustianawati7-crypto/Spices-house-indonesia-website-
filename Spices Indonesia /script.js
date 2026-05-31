@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
         rfqForm.reset();
         setFeedback('success', 'Thank you. Your RFQ is submitted and our export team will reply within 24 hours.');
       } catch (error) {
-        setFeedback('error', error.message || 'Submission failed. Please email export@spiceshouse.id directly.');
+        setFeedback('error', error.message || 'Submission failed. Please email revita@spiceshouseindonesia.com directly.');
       } finally {
         if (submitButton) {
           submitButton.classList.remove('is-loading');
